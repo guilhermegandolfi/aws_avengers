@@ -16,10 +16,6 @@ Abaixo o desenho final de onde queremos chegar com esse projeto fazendo s3 além
 ![alt text](https://github.com/guilhermegandolfi/aws_avengers/blob/001_terraform/03_terraform_s3/arquitetura/Imagem.png)
 
 
-```bash
-pip install foobar
-```
-
 ## Comandos terraform utilizados
 
 ```bash
