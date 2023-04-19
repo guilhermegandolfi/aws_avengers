@@ -8,3 +8,12 @@ URL: https://www.kaggle.com/datasets/amaanansari09/top-100-songs
 ## command aws cli
 ################################################################################################################
 aws s3 cp top_100_streamed_songs.csv  s3://pags-avengers-dev/raw_data/spotify/dat_load=20230223/top_100_streamed_songs --profile aws-avengers
+
+aws s3api copy-object \
+--bucket pags-avengers-dev \
+--copy-source pags-avengers-dev/raw_data/spotify/dat_load=20230223/top_100_streamed_songs___.csv?versionId=L11fmBAOzIF6v1Yo.LqTSSiqPIXNhHe_ \
+--key raw_data/spotify/dat_load=20230223/top_100_streamed_songs___.csv \
+--storage-class GLACIER \
+--profile aws-avengers
+
+################################################################################################################

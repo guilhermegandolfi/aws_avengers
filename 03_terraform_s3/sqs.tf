@@ -1,11 +1,11 @@
 resource "aws_sqs_queue" "queue" {
   name = "s3-event-notification-queue-avengers-raw-data"
-  tags   = var.tags
+  tags = var.tags
 }
 
 resource "aws_sqs_queue_policy" "aws_sqs_queue_policy_avengers" {
   queue_url = aws_sqs_queue.queue.id
-  policy = data.aws_iam_policy_document.aws_iam_policy_document_sqs_avengers.json
+  policy    = data.aws_iam_policy_document.aws_iam_policy_document_sqs_avengers.json
 }
 
 

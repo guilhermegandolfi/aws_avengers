@@ -35,3 +35,4 @@ resource "aws_iam_policy_attachment" "aws_iam_policy_attachment_iron_man" {
   users      = [aws_iam_user.aws_iam_user_iron_man.name]
   policy_arn = aws_iam_policy.policy.arn
 }
+
